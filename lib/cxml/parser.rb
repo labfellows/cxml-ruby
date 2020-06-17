@@ -46,7 +46,7 @@ module CXML
 
     def node_to_hash(node) # rubocop:disable Metrics/AbcSize
       return node if node.is_a? String
-      return node.nodes.first if node.nodes.all?(String) && node.attributes.empty?
+      return node.nodes.first if node.nodes.all? { |n| n.is_a? String } && node.attributes.empty?
 
       hash = node.attributes
       hash.transform_keys!(&method(:underscore_key))
