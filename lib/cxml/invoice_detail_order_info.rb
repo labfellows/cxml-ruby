@@ -5,6 +5,7 @@ module CXML
     accessible_nodes %i[
       order_reference
       master_agreement_reference
+      supplier_order_info
     ]
   end
 end

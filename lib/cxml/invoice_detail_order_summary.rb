@@ -13,6 +13,9 @@ module CXML
       invoice_detail_line_special_handling
       invoice_detail_line_shipping
       gross_amount
+      invoice_detail_discount
+      net_amount
+      comments
     ]
 
     def initialize_invoice_detail_order_summary(value)
