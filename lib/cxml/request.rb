@@ -16,6 +16,7 @@ module CXML
       invoice_detail_request
       order_request
       punch_out_setup_request
+      ship_notice_request
     ]
   end
 end
